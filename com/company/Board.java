@@ -2,7 +2,23 @@ package com.company;
 
 //相手のコマを取るルール排除
 public class Board {
+
+    public final static int BOARD_WIDTH = 3;
+    public final static int BOARD_HEIGHT = 4;
+
     private Koma[][] _board;
+
+    public Board(){
+
+    }
+
+    private static void initBorad(Board board){
+        for(int i=0; i<BOARD_WIDTH; i++){
+            for(int j=0; j<BOARD_HEIGHT; j++){
+                _board[i][j] = null;
+            }
+        }
+    }
 
     /**
      * 指定された座標にコマを置く。
