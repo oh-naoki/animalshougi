@@ -9,13 +9,17 @@ public class Board {
     private Koma[][] _board;
 
     public Board(){
-
+        initBorad(this._board);
     }
 
-    private static void initBorad(Board board){
+    /**
+     * 盤面の初期化
+     * @param board Koma[][]
+     */
+    private static void initBorad(Koma[][] board){
         for(int i=0; i<BOARD_WIDTH; i++){
             for(int j=0; j<BOARD_HEIGHT; j++){
-                _board[i][j] = null;
+                board[i][j] = null;
             }
         }
     }
