@@ -74,6 +74,7 @@ public class Board {
 
     /**
      * 引数の座標にコマを置けるか判断する
+     * 自分のコマがおいてある場合は置けず、相手の駒が置いてある場合は上書きする
      * @return boolean
      */
     public boolean judge(int x, int y){

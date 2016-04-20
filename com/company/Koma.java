@@ -6,7 +6,7 @@ package com.company;
 public class Koma {
     private String _name;
     private int[][] _move_area;
-    private Player _has_player;
+    private int _has_player;
 
     public void setName(String name){
         this._name = name;
@@ -20,11 +20,11 @@ public class Koma {
         this._move_area = move_area;
     }
 
-    public int[][] getMoveAre() {
+    public int[][] getMoveArea() {
         return this._move_area;
     }
 
-    public Player get_has_player(){
+    public int get_has_player(){
         return this._has_player;
     }
 }
